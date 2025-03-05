@@ -16,6 +16,13 @@
       align-items: center;
       height: 100vh;
     }
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
     .container {
       width: 700px; /* 改寬容器 */
       height: 600px; /* 設定固定高度讓畫面顯得更長 */
@@ -80,12 +87,14 @@
   </style>
 </head>
 <body>
-<div class="container">
-  <div class="decorative-border"></div>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" class="apple-logo" alt="Apple Logo">
-  <h1>We'll Be Back Soon</h1>
-  <div class="speech-bubble">Oops! Something went wrong. Please try again later!</div>
-  <div class="decorative-border"></div>
+<div class="content">
+  <div class="container">
+    <div class="decorative-border"></div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" class="apple-logo" alt="Apple Logo">
+    <h1>We'll Be Back Soon</h1>
+    <div class="speech-bubble">Oops! Something went wrong. Please try again later!</div>
+    <div class="decorative-border"></div>
+  </div>
 </div>
 </body>
 </html>
