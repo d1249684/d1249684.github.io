@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>服務暫時無法使用 - Apple Store</title>
+  <title>Service Temporarily Unavailable - Apple Store</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -13,60 +13,71 @@
       margin: 0;
     }
     .container {
-      max-width: 800px;
+      max-width: 600px;
       margin: 0 auto;
       background: white;
       padding: 40px;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-    .main-image {
-      width: 100%;
-      max-width: 600px; /* 限制圖片最大寬度 */
-      margin: 0 auto;
-      display: block;
-      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
     h1 {
       color: #1d1d1f;
-      font-size: 28px;
-      margin-top: 20px;
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
     p {
       color: #666;
       font-size: 18px;
-      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+    .apple-logo {
+      width: 120px;
+      margin-bottom: 20px;
+      animation: logoBounce 1s ease infinite alternate;
+    }
+    @keyframes logoBounce {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-10px); }
+    }
+    .decorative-border {
+      height: 4px;
+      background: linear-gradient(to right, #ff7f50, #ff6347, #ff4500);
+      margin-bottom: 20px;
     }
     .speech-bubble {
       display: inline-block;
       background: #fff;
       border-radius: 10px;
-      padding: 10px 20px;
-      font-size: 18px;
+      padding: 15px 25px;
+      font-size: 20px;
       color: #333;
-      border: 2px solid #000;
+      border: 2px solid #ff6347;
       position: relative;
       margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
     .speech-bubble::after {
       content: '';
       position: absolute;
-      bottom: -10px;
+      bottom: -12px;
       left: 50%;
       transform: translateX(-50%);
-      border-width: 10px;
+      border-width: 12px;
       border-style: solid;
-      border-color: #000 transparent transparent transparent;
+      border-color: #ff6347 transparent transparent transparent;
     }
   </style>
 </head>
 <body>
 <div class="container">
-  <!-- 主要圖片，放大並居中顯示 -->
-  <img src="img/fotor-ai-2025030534928.jpg" class="main-image" alt="主要圖片">
-  <h1>我們很快就回來</h1>
-  <p>Apple Store 目前正在進行更新，請稍後再試。感謝您的耐心等候。</p>
-  <div class="speech-bubble">網頁當機，請稍後！</div>
+  <div class="decorative-border"></div>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" class="apple-logo" alt="Apple Logo">
+  <h1>We'll Be Back Soon</h1>
+  <p>The Apple Store is currently undergoing updates. Please check back later. Thank you for your patience.</p>
+  <div class="speech-bubble">Oops! Something went wrong. Please try again later!</div>
+  <div class="decorative-border"></div>
 </div>
 </body>
 </html>
