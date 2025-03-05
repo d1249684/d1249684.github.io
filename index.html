@@ -30,19 +30,40 @@
       margin-bottom: 20px;
     }
     .bug {
-      width: 100%;
-      max-width: 400px;
+      width: 80px;
       display: block;
-      margin: 20px auto;
+      margin: 0 auto;
+    }
+    .speech-bubble {
+      display: inline-block;
+      background: #fff;
       border-radius: 10px;
+      padding: 10px 20px;
+      font-size: 18px;
+      color: #333;
+      border: 2px solid #000;
+      position: relative;
+      margin-top: 10px;
+    }
+    .speech-bubble::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 10px;
+      border-style: solid;
+      border-color: #000 transparent transparent transparent;
     }
   </style>
 </head>
 <body>
 <div class="container">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" class="apple-logo" alt="Apple Logo">
   <h1>我們很快就回來</h1>
   <p>Apple Store 目前正在進行更新，請稍後再試。感謝您的耐心等候。</p>
-  <img src="images/fotor-ai-2025030534928.jpg" class="bug" alt="小蟲從蘋果 logo 爬出來">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Coccinella_septempunctata_%28ladybug%29.jpg" class="bug" alt="小蟲">
+  <div class="speech-bubble">網頁當機，請稍後！</div>
 </div>
 </body>
 </html>
